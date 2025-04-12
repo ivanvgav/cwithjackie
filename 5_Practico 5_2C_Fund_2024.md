@@ -44,14 +44,24 @@ C: Temas 1,2,3,4,5. Tema 10.2 (Entrada Salida Formateada) - Pág. 50)
 
 a.  ¿Qué tipo de objeto es C? ¿Cuál es la diferencia con variables?
 
+  *C es un objeto constante. La diferencia es que su valor no puede ser modificado*
+
 b.  ¿De qué tipo son las variables vrE, vrC y vrF?
+  
+  *`vrE` es un número real, `vrC` es un carácter, `vrF` es un float*
 
 c.  ¿De qué tipo son los resultados de las dos operaciones realizadas?
 
+  *Van a ser de números, integers uno float*
+
 d.  Determinar los valores finales de vrE y vrF.
+
+  *`vrE` es 3 y `vrF` es 3.00
 
 e.  En una de las variables vrE o en vrF, hubo pérdida de información.
     ¿A cuál de las variables se hace referencia y cómo lo solucionaría?
+
+  *La perdida se da en `vrF` pero no sé cómo solucionarlo
 
 f.  Completar la tabla y realizar la ejecución.
 
@@ -99,28 +109,29 @@ f.  Completar la tabla y realizar la ejecución.
 
 a.  Indicar de qué tipo son las variables Ci y varc.
 
+  *`Ci` es un integer y `varc` es caracter*
+
 b.  ¿Cuál es la diferencia entre C y varc? ¿Tienen igual o diferente
     valor?
 
+  *El tipo es distinto pero tienen el mismo valor*
+
 c.  ¿Qué se muestra en la pantalla luego de ejecutar todos los printf?
 
-  -----------------------------------------------------------------------
-
-  -----------------------------------------------------------------------
+  El caracter es q y su valor en la tabla ASCII es 113 
+  q ----- Q 
+  Valor final: 81
 
 d.  Realizar la tabla de ejecución con el valor {120}.(tener en cuenta
     la tabla del **ejercicio 1 f**).
 
-```{=html}
-<!-- -->
-```
 3)  Dadas las siguientes sentencias y el valor asignado a cada una de
     las variables: []{.mark}
 
 +-----------------------------------------------------------------------+
 | > char x= 66; char y= 73; char j= x+3; char n;                        |
 | >                                                                     |
-| > printf (\"Original: %c %c %c %c \\n Modificada: %c %c %c %c \\n \", |
+| > printf ("Original: %c %c %c %c \n Modificada: %c %c %c %c \n ", |
 | > x, y, j, j+9, x+32, y+32, j+32, j+9+32 );                           |
 | >                                                                     |
 | > n= getchar();                                                       |
@@ -132,9 +143,10 @@ d.  Realizar la tabla de ejecución con el valor {120}.(tener en cuenta
 a)  ¿Qué se muestra en la pantalla luego de ejecutar los printf? Suponga
     una ejecución con el caracter { **'**2**'** }
 
-  -----------------------------------------------------------------------
-
-  -----------------------------------------------------------------------
+  Original: B I E N 
+  Modificada: b i e n 
+  2
+  el caracter es 2
 
 4)  Para los siguientes programas, se pide:
 
@@ -143,13 +155,18 @@ a)  ¿Qué se muestra en la pantalla luego de ejecutar los printf? Suponga
 a)  Para el programa 1, determinar de qué tipo es el resultado de la
     división, ¿se ejecuta el printf?
 
+  *Si, se ejecuta*
+
 b)  Para el programa 2, determinar cuántas veces se ejecuta el printf.
+  
+  *5 veces*
 
 c)  Realizar las tablas de ejecución de cada uno.
-
+  
 d)  Analizar cuál es el objetivo de cada programa. Indicar si haría
     mejoras a los programas de acuerdo con sus objetivos.
 
+  
 +---------------------------------+------------------------------------+
 | > **Programa 1**                | **Programa 2**                     |
 +=================================+====================================+
@@ -157,12 +174,12 @@ d)  Analizar cuál es el objetivo de cada programa. Indicar si haría
 | >                               |                                    |
 | > m=62;                         | p= 0; n = 1;                       |
 | >                               |                                    |
-| > //Divido por la cant de meses | while (n \<6) {                    |
+| > //Divido por la cant de meses | while (n <6) {                    |
 | > en un año                     |                                    |
 | >                               | p=n%2;                             |
 | > a= m/12.0;                    |                                    |
 | >                               | printf("El resultado del número %d |
-| > if (a \> 0 && a \< 18 ) {     | es %d", n, p);                     |
+| > if (a > 0 && a < 18 ) {     | es %d", n, p);                     |
 | >                               |                                    |
 | > printf("Tiene %f años", a);   | n = n+1;                           |
 | >                               |                                    |
@@ -211,9 +228,6 @@ c)  Modificar el código del ej 4 Programa 2, implementar el mismo código
 d)  Realizar el DF de cada uno de los programas escritos en lenguaje C
     en el punto b) y en el punto c).
 
-```{=html}
-<!-- -->
-```
 7)  Completar el siguiente programa:
 
 +-----------------------------------------------------------------------+
@@ -252,14 +266,8 @@ a)  Codificar en lenguaje C las sentencias de los comentarios.
 
 b)  Realizar la tabla de ejecución con valores adecuados.
 
-```{=html}
-<!-- -->
-```
 8)  Para los items f) y h) del Ejercicio 8 del Práctico 4 se pide:
 
-```{=html}
-<!-- -->
-```
 a)  Codificarlos en lenguaje C.
 
 b)  Realizar la tabla de ejecución del ejercicio f) teniendo en cuenta
@@ -268,9 +276,6 @@ b)  Realizar la tabla de ejecución del ejercicio f) teniendo en cuenta
 c)  Realizar la tabla de ejecución del ejercicio h) teniendo en cuenta
     que son 4 números.
 
-```{=html}
-<!-- -->
-```
 9)  Realizar un programa que dado un número ingresado por el usuario,
     determine e informe:
 
@@ -280,17 +285,3 @@ c)  Realizar la tabla de ejecución del ejercicio h) teniendo en cuenta
 -   si es válido para la expresión del Ejercicio 12 del Práctico 2.
 
 a)  Realizar el DF del programa resultante.
-
-```{=html}
-<!-- -->
-```
-10) Realizar un programa que dado un número ingresado por el usuario,
-    determine e informe si es válido para la expresión del Ejercicio 14
-    del Práctico 2.
-
-```{=html}
-<!-- -->
-```
-a)  Realizar el DF del programa resultante.
-
-![](media/image1.png){width="4.09375in" height="5.979166666666667in"}
