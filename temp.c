@@ -48,13 +48,13 @@
 
 // Ejercicio 5
 int main(){
-    char letra;
+    char letra[25];
 
     printf("Inserte su nombre: \n");
-    scanf("%c", letra);
+    scanf("%s", letra);
     getchar();
 
-    printf("Tu nombre es: %d", letra);
+    printf("Tu nombre es: %s\n", letra);
 
     return 0;
 }
