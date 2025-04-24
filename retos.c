@@ -37,3 +37,11 @@
  * - NO hace falta comprobar que ambas palabras existan.
  * - Dos palabras exactamente iguales no son anagrama.
 */
+
+// Calcular la longitud de las palabras
+
+// Ordenar las letras de las palabras
+
+// Comparar las palabras
+
+// Decir si son o no anagramas
